@@ -1,6 +1,1 @@
-spring:
-  data:
-    mongodb:
-      uri: mongodb://MONGODB_HOST:27017/yaosbackoffice2
-server:
-  port: 8888
+
