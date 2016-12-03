@@ -7,10 +7,13 @@ import config from './app.config';
 import AppComponent from './app.component';
 import Components from './components';
 import Common from './common';
+import _ from 'lodash';
 
-angular.module('app', [uiRouter, Components, Common])
+require('ngMap');
+
+angular.module('app', [uiRouter, Components, Common, 'ngMap'])
     .config(config)
-
+    .constant('_', window._)
     .component('app', AppComponent)
 
     .run(function($log) {
