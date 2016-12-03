@@ -1,11 +1,11 @@
 <nav class="navbar navbar-inverse">
     <div class="container-fluid">
         <div class="navbar-header">
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="/map">
                 <img alt="Brand" src="images/logo.png">
             </a>
             <p class="navbar-text" style="color: white; font-size: 20px; padding-top:8px; margin-top: 0">Popup Concert</p>
-            <form class="navbar-form navbar-right" role="search">
+            <form class="navbar-form navbar-left" role="search">
                 <div class="form-group">
                     <input type="text" class="form-control" placeholder="Search">
                 </div>
@@ -36,25 +36,32 @@
                     <a href="#"><span class="label label-default">Classic</span></a>
                 </div>
 
-                <a href="#" class="list-group-item" ng-repeat="band in mapViewCtrl.bandlist" style="display: flex; padding: 0" >
+                <a href="#" class="list-group-item" ng-repeat="band in mapViewCtrl.bandlist" style="display: flex; padding: 0; background: #222;" >
                     <div style="width: 30%; border-left:0;">
                         <img src="images/bands/{{band.performer.picture}}" height="120px" width="120px">
                     </div>
                     <div style="width: 70%; padding-left: 10px; padding-top: 5px">
-                        <p class="list-group-item-text">
+                        <p class="list-group-item-text band-location-name" style="color: lightgrey;">
                             <span>{{band.location.name}}</span>
                         </p>
-                        <p class="list-group-item-text">
-                            <span class="text-muted">{{band.location.description}}</span>
-                        </p>
-                        <h4 class="list-group-item-heading band-title">{{band.performer.name}}</h4>
-                        <p style="padding-right: 10px;">
+
+                        <p style="padding-right: 10px;margin-top: -15px;">
                                 <span class="label pull-right"
                                       ng-class="{'Rock':'label-danger', 'Electro':'label-primary', 'World':'label-success', 'Classic': 'label-default'}[band.genre]"
                                 >{{band.genre}}</span>
                         </p>
-                        <p class="list-group-item-text">{{band.gigName}}</p>
-                        <p class="list-group-item-text text-muted">{{mapViewCtrl.getTime(band.time) | date:"hh:mm dd.MM.yyyy"}}</p>
+
+                        <p class="list-group-item-text band-location-description" style="color: darkgrey; margin-top: 15px;">
+                            <span class="text-muted">{{band.location.description}}</span>
+                        </p>
+
+                        <h4 class="list-group-item-heading band-performer-name" style="color: white; margin-top: 5px;">{{band.performer.name}}</h4>
+
+
+
+                        <p class="list-group-item-text band-gig-name" style="  color: lightgrey;">{{band.gigName}}</p>
+
+                        <p class="list-group-item-text text-muted band-time" style="color:darkgrey">{{mapViewCtrl.getTime(band.time) | date:"hh:mm dd.MM.yyyy"}}</p>
                     </div>
                 </a>
             </div>
