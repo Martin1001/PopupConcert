@@ -1,0 +1,233 @@
+[
+  {
+    "id": "1000",
+    "performer": {
+      "name": "The Bootstrappers",
+      "picture": "assets/rock_1.jpg",
+      "about": ""
+    },
+    "gigname": "Opening minds",
+    "location": {
+      "name": "S+U Warschauer Str. (Berlin)",
+      "lat": "52.505884",
+      "lon": "13.448716",
+      "type": "S/U-Bahn Station",
+      "description": "Above the S-Bahn platform",
+      "bvg-id": "009120004"
+    },
+    "time": "2016-12-04 22:00",
+    "genre": "Rock",
+    "Description": "",
+    "coming": 150
+  },
+  {
+    "id": "1001",
+    "performer": {
+      "name": "Trendy Healer",
+      "picture": "assets/rock_2.jpg",
+      "about": ""
+    },
+    "gigname": "Our first album",
+    "location": {
+      "name": "U Kottbusser Tor (Berlin)",
+      "lat": "52.499044",
+      "lon": "13.417748",
+      "type": "U-Bahn Station",
+      "description": "Center of station",
+      "bvg-id": "009013102"
+    },
+    "time": "2016-12-04 21:30",
+    "genre": "Rock",
+    "Description": "",
+    "coming": 150
+  },
+  {
+    "id": "1002",
+    "performer": {
+      "name": "Goggles Of Sanity",
+      "picture": "assets/rock_3.jpg",
+      "about": ""
+    },
+    "gigname": "Finally out",
+    "location": {
+      "name": "U Kottbusser Tor (Berlin)",
+      "lat": "52.499044",
+      "lon": "13.417748",
+      "type": "U-Bahn Station",
+      "description": "Center of station",
+      "bvg-id": "009013102"
+    },
+    "time": "2016-12-04 22:30",
+    "genre": "Rock",
+    "Description": "",
+    "coming": 150
+  },
+  {
+    "id": "1003",
+    "performer": {
+      "name": "Goggles Of Sanity",
+      "picture": "assets/rock_4.jpg",
+      "about": ""
+    },
+    "gigname": "Finally out",
+    "location": {
+      "name": "U Moritzplatz (Berlin)",
+      "lat": "52.503736",
+      "lon": "13.410943",
+      "type": "U-Bahn Station",
+      "description": "Train platform",
+      "bvg-id": "009013101"
+    },
+    "time": "2016-12-04 22:00",
+    "genre": "Rock",
+    "Description": "",
+    "coming": 50
+  },
+  {
+    "id": "1004",
+    "performer": {
+      "name": "Indignant Tofu",
+      "picture": "assets/rock_5.jpg",
+      "about": ""
+    },
+    "gigname": "Bored with life",
+    "location": {
+      "name": "U Moritzplatz (Berlin)",
+      "lat": "52.503736",
+      "lon": "13.410943",
+      "type": "U-Bahn Station",
+      "description": "Train platform",
+      "bvg-id": "009013101"
+    },
+    "time": "2016-12-04 22:00",
+    "genre": "Rock",
+    "Description": "",
+    "coming": 50
+  },
+  {
+    "id": "1005",
+    "performer": {
+      "name": "DJ Titan",
+      "picture": "assets/electro_1.jpg",
+      "about": ""
+    },
+    "gigname": "Music for the masses",
+    "location": {
+      "name": "U Kottbusser Tor (Berlin)",
+      "lat": "52.499044",
+      "lon": "13.417748",
+      "type": "U-Bahn Station",
+      "description": "Center of station",
+      "bvg-id": "009013102"
+    },
+    "time": "2016-12-04 20:00",
+    "genre": "Electro",
+    "Description": "",
+    "coming": 50
+  },
+  {
+    "id": "1006",
+    "performer": {
+      "name": "DJ Alice",
+      "picture": "assets/electro_2.jpg",
+      "about": ""
+    },
+    "gigname": "Making noise",
+    "location": {
+      "name": "S+U Warschauer Str. (Berlin)",
+      "lat": "52.505884",
+      "lon": "13.448716",
+      "type": "S/U-Bahn Station",
+      "description": "S1/S5/S7 Platform",
+      "bvg-id": "009120004"
+    },
+    "time": "2016-12-04 21:00",
+    "genre": "Electro",
+    "Description": "",
+    "coming": 50
+  },
+  {
+    "id": "1007",
+    "performer": {
+      "name": "Artificial Execution",
+      "picture": "assets/electro_3.jpg",
+      "about": ""
+    },
+    "gigname": "Our thing",
+    "location": {
+      "name": "U Kottbusser Tor (Berlin)",
+      "lat": "52.499044",
+      "lon": "13.417748",
+      "type": "U-Bahn Station",
+      "description": "Center of station",
+      "bvg-id": "009013102"
+    },
+    "time": "2016-12-04 21:00",
+    "genre": "Electro",
+    "Description": "",
+    "coming": 50
+  },
+  {
+    "id": "1008",
+    "performer": {
+      "name": "Artificial Execution",
+      "picture": "assets/electro_3.jpg",
+      "about": ""
+    },
+    "gigname": "Our thing",
+    "location": {
+      "name": "U Schlesisches Tor (Berlin)",
+      "lat": "52.501147",
+      "lon": "13.441794",
+      "type": "U-Bahn Station",
+      "description": "Train platform",
+      "bvg-id": "009014102"
+    },
+    "time": "2016-12-04 21:00",
+    "genre": "Electro",
+    "Description": "",
+    "coming": 50
+  },
+  {
+    "id": "1009",
+    "performer": {
+      "name": "Temple of Vegan",
+      "picture": "assets/electro_4.jpg",
+      "about": ""
+    },
+    "gigname": "Our thing",
+    "location": {
+      "name": "U Schlesisches Tor (Berlin)",
+      "lat": "52.501147",
+      "lon": "13.441794",
+      "type": "U-Bahn Station",
+      "description": "Train platform",
+      "bvg-id": "009014102"
+    },
+    "time": "2016-12-04 22:00",
+    "genre": "Electro",
+    "Description": "",
+    "coming": 50
+  },
+  {
+    "id": "1010",
+    "performer": {
+      "name": "Happy Brain",
+      "picture": "assets/electro_5.jpg",
+      "about": ""
+    },
+    "gigname": "Our thing",
+    "location": {
+      "name": "U Görlitzer Bahnhof (Berlin)",
+      "lat": "52.499035",
+      "lon": "13.428463",
+      "type": "U-Bahn Station",
+      "description": "Train platform",
+      "bvg-id": "009014101"
+    },
+    "time": "2016-12-04 22:00",
+    "genre": "Electro",
+    "Description": "",
+    "coming": 50
+  }
+]

@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.Arrays;
 import java.util.List;
 
-@RestController
+@RestController(value = "/api/v1")
 public class GigsController {
 
     @GetMapping(path = "/gigs")
