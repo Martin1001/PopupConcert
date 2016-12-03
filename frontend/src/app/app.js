@@ -10,8 +10,9 @@ import Common from './common';
 import _ from 'lodash';
 
 require('ngMap');
+require('angular-ui-bootstrap');
 
-angular.module('app', [uiRouter, Components, Common, 'ngMap'])
+angular.module('app', [uiRouter, Components, Common, 'ngMap', 'ui.bootstrap'])
     .config(config)
     .constant('_', window._)
     .component('app', AppComponent)
