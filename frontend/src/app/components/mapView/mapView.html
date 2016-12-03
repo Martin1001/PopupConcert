@@ -37,7 +37,7 @@
         <div class="col col-md-4">
             <div class="list-group scrollable">
 
-                <a href="#" class="list-group-item" ng-repeat="band in mapViewCtrl.bandlist" style="display: flex; padding: 0; background: #222;" >
+                <a href="#" ng-click="mapViewCtrl.open(band)" class="list-group-item" ng-repeat="band in mapViewCtrl.bandlist" style="display: flex; padding: 0; background: #222;" >
                     <div style="width: 30%; border-left:0;">
                         <img src="images/bands/{{band.performer.picture}}" height="120px" width="120px">
                     </div>
