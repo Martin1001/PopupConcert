@@ -1,1 +1,1 @@
-web: java -jar dist/app.jar
+web: java -jar dist/app.jar --server.port=$PORT
