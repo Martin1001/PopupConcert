@@ -1,0 +1,19 @@
+allprojects {
+    group = 'org.hackathon.berlin'
+    version = '1.0-SNAPSHOT'
+
+    apply plugin: 'idea'
+}
+
+subprojects {
+    repositories {
+        mavenLocal()
+        mavenCentral()
+        maven { url "http://repo.maven.apache.org/maven2" }
+    }
+}
+
+task wrapper(type: Wrapper) {
+    gradleVersion = '3.0'
+}
+

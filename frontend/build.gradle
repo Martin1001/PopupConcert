@@ -1,0 +1,36 @@
+buildscript {
+    repositories {
+        maven {
+            url "https://plugins.gradle.org/m2/"
+        }
+    }
+
+    dependencies {
+        classpath "com.moowork.gradle:gradle-node-plugin:0.12"
+    }
+}
+
+// cf. https://github.com/srs/gradle-node-plugin
+apply plugin: 'com.moowork.node'
+apply plugin: 'java'
+
+node {
+    version = '6.1.0'
+    npmVersion = '3.8.6'
+    download = true
+}
+
+task buildNpm(type: NpmTask) {
+    // run webpack and build the frontend
+    args = ['run', 'build']
+}
+
+task testNpm(type: NpmTask) {
+    // run webpack and build the frontend
+    args = ['run', 'test']
+}
+
+// Before create the JAR or even compiling java we want our frontend-stuff done
+compileJava.dependsOn testNpm
+testNpm.dependsOn buildNpm
+buildNpm.dependsOn npmInstall

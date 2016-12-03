@@ -1,0 +1,47 @@
+description = ''
+
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:1.4.1.RELEASE")
+    }
+}
+
+apply plugin: 'java'
+apply plugin: 'spring-boot'
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+compileJava {
+    options.encoding = "UTF-8"
+}
+
+jar {
+    archiveName 'app.jar'
+}
+
+dependencies {
+    compile project(':frontend')
+
+    compile group: 'org.springframework.boot', name: 'spring-boot-starter-web', version: '1.4.1.RELEASE'
+    compile group: 'org.springframework.boot', name: 'spring-boot-starter-data-mongodb', version: '1.4.1.RELEASE'
+    compile group: 'joda-time', name: 'joda-time', version: '2.9.3'
+    compile group: 'com.fasterxml.jackson.datatype', name: 'jackson-datatype-joda', version: '2.8.4'
+}
+
+task copyJars(type: Copy) {
+    from "$buildDir/libs"
+    into "$rootDir/dist/"
+    include "**/*.jar"
+}
+
+assemble.doLast {
+    copyJars.execute()
+}
+
+clean.doFirst {
+    delete "$rootDir/dist/"
+}
