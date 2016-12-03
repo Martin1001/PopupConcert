@@ -6,3 +6,5 @@ include ':frontend'
 project(':backend').projectDir = "$rootDir/backend" as File
 project(':frontend').projectDir = "$rootDir/frontend" as File
 
+task stage(dependsOn: 'bootRepackage') {
+}
