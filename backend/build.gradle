@@ -48,3 +48,5 @@ assemble.doLast {
 clean.doFirst {
     delete "$rootDir/dist/"
 }
+task stage(dependsOn: 'bootRepackage') {
+}

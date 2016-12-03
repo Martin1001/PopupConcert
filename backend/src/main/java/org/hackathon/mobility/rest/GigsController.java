@@ -1,8 +1,8 @@
 package org.hackathon.mobility.rest;
 
-import org.hackathon.mobility.domain.Gig;
-import org.hackathon.mobility.domain.Location;
-import org.hackathon.mobility.domain.Performer;
+import org.hackathon.mobility.domain.gigs.Gig;
+import org.hackathon.mobility.domain.gigs.Location;
+import org.hackathon.mobility.domain.gigs.Performer;
 import org.joda.time.DateTime;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
