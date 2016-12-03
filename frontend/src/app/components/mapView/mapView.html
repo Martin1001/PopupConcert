@@ -30,14 +30,14 @@
         <div class="col col-md-4">
             <div class="list-group scrollable">
                 <div style="width: 100%; height: 35px; text-align: center; padding-top: 5px; background: #222">
-                    <span class="label label-danger">Rock</span>
-                    <span class="label label-primary">Electro</span>
-                    <span class="label label-success">World</span>
-                    <span class="label label-default">Classic</span>
+                    <a href="#"><span class="label label-danger">Rock</span></a>
+                    <a href="#"><span class="label label-primary">Electro</span></a>
+                    <a href="#"><span class="label label-success">World</span></a>
+                    <a href="#"><span class="label label-default">Classic</span></a>
                 </div>
 
                 <a href="#" class="list-group-item" ng-repeat="band in mapViewCtrl.bandlist" style="display: flex; padding: 0" >
-                    <div style="width: 30%">
+                    <div style="width: 30%; border-left:0;">
                         <img src="images/bands/{{band.performer.picture}}" height="120px" width="120px">
                     </div>
                     <div style="width: 70%; padding-left: 10px; padding-top: 5px">
@@ -48,7 +48,7 @@
                             <span class="text-muted">{{band.location.description}}</span>
                         </p>
                         <h4 class="list-group-item-heading band-title">{{band.performer.name}}</h4>
-                        <p>
+                        <p style="padding-right: 10px;">
                                 <span class="label pull-right"
                                       ng-class="{'Rock':'label-danger', 'Electro':'label-primary', 'World':'label-success', 'Classic': 'label-default'}[band.genre]"
                                 >{{band.genre}}</span>
