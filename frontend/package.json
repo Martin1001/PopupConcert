@@ -1,5 +1,5 @@
 {
-  "name": "pokemon-presenter",
+  "name": "frontend",
   "version": "1.0.0",
   "description": "",
   "scripts": {
@@ -52,9 +52,10 @@
   },
   "dependencies": {
     "angular": "^1.5.7",
+    "angular-google-maps": "^2.4.0",
     "angular-resource": "^1.5.7",
-    "angular-ui-router": "^1.0.0-beta.1",
     "angular-ui-bootstrap": "^2.0.1",
+    "angular-ui-router": "^1.0.0-beta.1",
     "bootstrap": "^3.3.7"
   }
 }
