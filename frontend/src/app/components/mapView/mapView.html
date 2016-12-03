@@ -1,13 +1,50 @@
-
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">
+                <img alt="Brand" src="images/logo.png">
+            </a>
+        </div>
+    </div>
+</nav>
 <div class="container-fluid">
     <div class="row">
-        <div class="col-md-8">
-            <div map-lazy-load="https://maps.google.com/maps/api/js" map-lazy-load-params="{{mapViewCtrl.googleMapsUrl}}" on-center-changed="mapViewCtrl.centerChanged()">
-                <ng-map center="52.500655, 13.435317" zoom="15" default-style="false" trigger-resize="true" on-center-changed="mapViewCtrl.centerChanged()" style="height: 500px">
-                    <marker position="52.500655, 13.435317" on-click="mapViewCtrl.click()" title="Home"></marker>
+        <div class="col col-md-8">
+            <div map-lazy-load="https://maps.google.com/maps/api/js"
+                 map-lazy-load-params="{{mapViewCtrl.googleMapsUrl}}" on-center-changed="mapViewCtrl.centerChanged()">
+                <ng-map center="52.500655, 13.435317" zoom="15" default-style="false" trigger-resize="true"
+                        on-center-changed="mapViewCtrl.centerChanged()" class="map-style">
+                    <marker ng-repeat="band in mapViewCtrl.playlist"
+                            position="{{band.location.lat}}, {{band.location.lon}}"
+                            on-click="mapViewCtrl.click()"></marker>
                 </ng-map>
             </div>
         </div>
-        <div class="col-md-4">test</div>
+        <div class="col col-md-4">
+            <div class="list-group scrollable">
+                <a href="#" class="list-group-item" ng-repeat="band in mapViewCtrl.bandlist" style="display: flex">
+
+                    <div style="width: 20%">
+                        <img src="{{band.performer.picture}}" height="80px" width="80px" class="img-rounded">
+                    </div>
+                    <div style="width: 80%; padding-left: 10px;">
+                        <p class="list-group-item-text">
+                            <span>{{band.location.name}}</span>
+                        </p>
+                        <p class="list-group-item-text">
+                            <span class="text-muted">{{band.location.description}}</span>
+                        </p>
+                        <h4 class="list-group-item-heading band-title">{{band.performer.name}}</h4>
+                        <p>
+                                <span class="label pull-right"
+                                      ng-class="{'Rock':'label-danger', 'Electro':'label-primary', 'World':'label-success', 'Classic': 'label-default'}[band.genre]"
+                                >{{band.genre}}</span>
+                        </p>
+                        <p class="list-group-item-text">{{band.gigName}}</p>
+                        <p class="list-group-item-text text-muted">{{mapViewCtrl.getTime(band.time) | date:"hh:mm dd.MM.yyyy"}}</p>
+                    </div>
+                </a>
+            </div>
+        </div>
     </div>
 </div>
