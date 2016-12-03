@@ -3,6 +3,7 @@ package org.hackathon.mobility.rest;
 import org.hackathon.mobility.domain.gigs.model.Gig;
 import org.hackathon.mobility.domain.gigs.model.Location;
 import org.hackathon.mobility.domain.gigs.model.Performer;
+import org.hackathon.mobility.domain.gigs.model.RoutingStep;
 import org.joda.time.DateTime;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -23,7 +24,23 @@ public class GigsController {
 
     @GetMapping(path = "/gigs/{gigId}")
     public Gig gig(@PathVariable String gigId) {
-        return givenMockedGigs().get(0);
+        final Gig res = givenGigWithRoute();
+        return res;
+    }
+
+    private Gig givenGigWithRoute() {
+        final Gig res = givenMockedGigs().get(0);
+        res.setRoutingStep(
+            Arrays.asList(
+            RoutingStep.builder()
+                .name("Görlitzer Bhf")
+                .line(RoutingStep.Line.builder().direction("Pankow").name("U2").build())
+                .lat(1.2D)
+                .lon(1.2D)
+                .routingType(RoutingStep.RoutingType.UBAHN)
+                .build()
+            ));
+        return res;
     }
 
 

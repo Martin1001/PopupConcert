@@ -1,4 +1,0 @@
-spring:
-  data:
-    mongodb:
-      uri: mongodb://admin:admin@ds119788.mlab.com:19788/popup_concert
