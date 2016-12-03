@@ -12,11 +12,13 @@ export default class MapController {
 
         this.playlist = [];
         this.bandlist = [];
+        this.currentGenres = [];
 
         this.$http.get('/api/v1/gigs')
             .then(res => {
                 this.playlist = res.data;
                 this.bandlist = res.data;
+                this.calCurrentGenres();
             });
 
         NgMap.getMap().then((map) => {
@@ -30,19 +32,33 @@ export default class MapController {
     };
 
     click = (event) => {
-        this.$log.info('click');
+        this.$log.info('Location selected');
 
         let lat = event.latLng.lat().toPrecision(8);
         let lon = event.latLng.lng().toPrecision(8);
 
         this.bandlist = this.playlist.filter(b => b.location.lat == lat && b.location.lon == lon);
+        this.calCurrentGenres();
     };
+
+    calCurrentGenres(){
+        this.currentGenres = [];
+        this.bandlist.forEach(e => {
+            this.currentGenres.push(e.genre);
+        });
+
+        this.currentGenres = this.currentGenres.filter((item, pos) => {
+            return this.currentGenres.indexOf(item) == pos;
+        });
+        console.info(this.currentGenres);
+    }
 
     getTime = (millis) => {
         return new Date(millis);
     };
 
     open(band) {
+        console.log('OPEN');
         this.modalInstance = this.$uibModal.open({
             animation: true,
             template: modalTemplate.toString(),
