@@ -1,3 +1,5 @@
+import modalTemplate from './mapView.modal.html';
+
 export default class MapController {
 
     constructor($log, $http, $timeout, NgMap, $uibModal) {
@@ -40,21 +42,27 @@ export default class MapController {
         return new Date(millis);
     };
 
-    open() {
-        // this.$log.info('open');
-        // this.modalInstance = this.$uibModal.open({
-        //     animation: true,
-        //     ariaLabelledBy: 'modal-title-top',
-        //     ariaDescribedBy: 'modal-body-top',
-        //     templateUrl: template.toString(),
-        //     size: 'sm',
-        //     controller: this.modalComponent,
-        //     controllerAs: 'modalCtrl'
-        // });
-        //
-        // this.modalInstance.result.then(() => {
-        // }, () => {
-        // });
+    open(band) {
+        this.modalInstance = this.$uibModal.open({
+            animation: true,
+            template: modalTemplate.toString(),
+            size: 'lg',
+            controller: ["$scope", "$uibModalInstance", "band", ($scope, $uibModalInstance, band) => {
+                this.$log.info(band);
+                $scope.band = band;
+                $scope.theBestVideo = 'AetfspeIj_M';
+            }],
+            controllerAs: 'modalCtrl',
+            resolve: {
+                band: () => {
+                    return band;
+                }
+            }
+        });
+
+        this.modalInstance.result.then(() => {
+        }, () => {
+        });
     };
 }
 

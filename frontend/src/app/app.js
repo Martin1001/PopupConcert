@@ -11,8 +11,9 @@ import _ from 'lodash';
 
 require('ngMap');
 require('angular-ui-bootstrap');
+require('angular-youtube-embed');
 
-angular.module('app', [uiRouter, Components, Common, 'ngMap', 'ui.bootstrap'])
+angular.module('app', [uiRouter, Components, Common, 'ngMap', 'ui.bootstrap', 'youtube-embed'])
     .config(config)
     .constant('_', window._)
     .component('app', AppComponent)
