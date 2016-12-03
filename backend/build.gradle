@@ -48,3 +48,6 @@ assemble.doLast {
 clean.doFirst {
     delete "$rootDir/dist/"
 }
+
+task stage(dependsOn: ['build', 'clean'])
+build.mustRunAfter clean
