@@ -1,10 +1,12 @@
 package org.hackathon.mobility.rest;
 
+import org.hackathon.mobility.domain.gigs.GigService;
 import org.hackathon.mobility.domain.gigs.model.Gig;
 import org.hackathon.mobility.domain.gigs.model.Location;
 import org.hackathon.mobility.domain.gigs.model.Performer;
 import org.hackathon.mobility.domain.gigs.model.RoutingStep;
 import org.joda.time.DateTime;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -17,11 +19,15 @@ import java.util.List;
 @RequestMapping(value = "/api/v1")
 public class GigsController {
 
+    @Autowired
+    private GigService gigService;
+
     @GetMapping(path = "/gigs")
     public List<Gig> gigs(){
 
-        final List<Gig> res = givenMockedGigs();
-        return res;
+        return gigService.allGigs();
+//        final List<Gig> res = givenMockedGigs();
+//        return res;
     }
 
     @GetMapping(path = "/gigs/{gigId}")
@@ -50,7 +56,7 @@ public class GigsController {
         final Gig gig = Gig.builder()
             .coming(17)
             .description("Rock meets electronic")
-            .genres(Arrays.asList("Rcok", "Electronic"))
+            .genre("Rcok")
             .gigName("Ev Gig")
             .time(DateTime.now().plusDays(3).withTime(20, 15, 0,0))
             .performer(Performer.builder()
@@ -70,7 +76,6 @@ public class GigsController {
         final Gig gig_2 = Gig.builder()
             .coming(46)
             .description("Folks' Favorite")
-            .genres(Arrays.asList("Folk"))
             .gigName("Urban Taste")
             .time(DateTime.now().plusDays(3).withTime(20, 15, 0,0))
             .performer(Performer.builder()

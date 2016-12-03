@@ -1,5 +1,6 @@
 package org.hackathon.mobility.domain.gigs.model;
 
+import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import org.joda.time.DateTime;
@@ -7,6 +8,7 @@ import org.joda.time.DateTime;
 import java.util.List;
 
 @Data
+@AllArgsConstructor
 @Builder
 public class Gig {
 
@@ -15,10 +17,11 @@ public class Gig {
         private String gigName;
         private Location location;
         private DateTime time;
-        private List<String> genres;
+        private String genre;
         private String description;
         private Integer coming;
 
         private List<RoutingStep> routingStep;
+
 
 }

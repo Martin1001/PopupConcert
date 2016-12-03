@@ -6,18 +6,18 @@
       "picture": "assets/rock_1.jpg",
       "about": ""
     },
-    "gigname": "Opening minds",
+    "gigName": "Opening minds",
     "location": {
       "name": "S+U Warschauer Str. (Berlin)",
       "lat": "52.505884",
       "lon": "13.448716",
       "type": "S/U-Bahn Station",
       "description": "Above the S-Bahn platform",
-      "bvg-id": "009120004"
+      "bvgId": "009120004"
     },
-    "time": "2016-12-04 22:00",
+    "time": "2016-12-04T19:00:00Z",
     "genre": "Rock",
-    "Description": "",
+    "description": "",
     "coming": 150
   },
   {
@@ -27,18 +27,18 @@
       "picture": "assets/rock_2.jpg",
       "about": ""
     },
-    "gigname": "Our first album",
+    "gigName": "Our first album",
     "location": {
       "name": "U Kottbusser Tor (Berlin)",
       "lat": "52.499044",
       "lon": "13.417748",
       "type": "U-Bahn Station",
       "description": "Center of station",
-      "bvg-id": "009013102"
+      "bvgId": "009013102"
     },
-    "time": "2016-12-04 21:30",
+    "time": "2016-12-04T21:30:00Z",
     "genre": "Rock",
-    "Description": "",
+    "description": "",
     "coming": 150
   },
   {
@@ -48,18 +48,18 @@
       "picture": "assets/rock_3.jpg",
       "about": ""
     },
-    "gigname": "Finally out",
+    "gigName": "Finally out",
     "location": {
       "name": "U Kottbusser Tor (Berlin)",
       "lat": "52.499044",
       "lon": "13.417748",
       "type": "U-Bahn Station",
       "description": "Center of station",
-      "bvg-id": "009013102"
+      "bvgId": "009013102"
     },
-    "time": "2016-12-04 22:30",
+    "time": "2016-12-04T22:30:00Z",
     "genre": "Rock",
-    "Description": "",
+    "description": "",
     "coming": 150
   },
   {
@@ -69,18 +69,18 @@
       "picture": "assets/rock_4.jpg",
       "about": ""
     },
-    "gigname": "Finally out",
+    "gigName": "Finally out",
     "location": {
       "name": "U Moritzplatz (Berlin)",
       "lat": "52.503736",
       "lon": "13.410943",
       "type": "U-Bahn Station",
       "description": "Train platform",
-      "bvg-id": "009013101"
+      "bvgId": "009013101"
     },
-    "time": "2016-12-04 22:00",
+    "time": "2016-12-04T22:00:00Z",
     "genre": "Rock",
-    "Description": "",
+    "description": "",
     "coming": 50
   },
   {
@@ -90,18 +90,18 @@
       "picture": "assets/rock_5.jpg",
       "about": ""
     },
-    "gigname": "Bored with life",
+    "gigName": "Bored with life",
     "location": {
       "name": "U Moritzplatz (Berlin)",
       "lat": "52.503736",
       "lon": "13.410943",
       "type": "U-Bahn Station",
       "description": "Train platform",
-      "bvg-id": "009013101"
+      "bvgId": "009013101"
     },
-    "time": "2016-12-04 22:00",
+    "time": "2016-12-04T22:00:00Z",
     "genre": "Rock",
-    "Description": "",
+    "description": "",
     "coming": 50
   },
   {
@@ -111,18 +111,18 @@
       "picture": "assets/electro_1.jpg",
       "about": ""
     },
-    "gigname": "Music for the masses",
+    "gigName": "Music for the masses",
     "location": {
       "name": "U Kottbusser Tor (Berlin)",
       "lat": "52.499044",
       "lon": "13.417748",
       "type": "U-Bahn Station",
       "description": "Center of station",
-      "bvg-id": "009013102"
+      "bvgId": "009013102"
     },
-    "time": "2016-12-04 20:00",
+    "time": "2016-12-04T20:00:00Z",
     "genre": "Electro",
-    "Description": "",
+    "description": "",
     "coming": 50
   },
   {
@@ -132,18 +132,18 @@
       "picture": "assets/electro_2.jpg",
       "about": ""
     },
-    "gigname": "Making noise",
+    "gigName": "Making noise",
     "location": {
       "name": "S+U Warschauer Str. (Berlin)",
       "lat": "52.505884",
       "lon": "13.448716",
       "type": "S/U-Bahn Station",
       "description": "S1/S5/S7 Platform",
-      "bvg-id": "009120004"
+      "bvgId": "009120004"
     },
-    "time": "2016-12-04 21:00",
+    "time": "2016-12-04T21:00:00Z",
     "genre": "Electro",
-    "Description": "",
+    "description": "",
     "coming": 50
   },
   {
@@ -153,18 +153,18 @@
       "picture": "assets/electro_3.jpg",
       "about": ""
     },
-    "gigname": "Our thing",
+    "gigName": "Our thing",
     "location": {
       "name": "U Kottbusser Tor (Berlin)",
       "lat": "52.499044",
       "lon": "13.417748",
       "type": "U-Bahn Station",
       "description": "Center of station",
-      "bvg-id": "009013102"
+      "bvgId": "009013102"
     },
-    "time": "2016-12-04 21:00",
+    "time": "2016-12-04T21:00:00Z",
     "genre": "Electro",
-    "Description": "",
+    "description": "",
     "coming": 50
   },
   {
@@ -174,18 +174,18 @@
       "picture": "assets/electro_3.jpg",
       "about": ""
     },
-    "gigname": "Our thing",
+    "gigName": "Our thing",
     "location": {
       "name": "U Schlesisches Tor (Berlin)",
       "lat": "52.501147",
       "lon": "13.441794",
       "type": "U-Bahn Station",
       "description": "Train platform",
-      "bvg-id": "009014102"
+      "bvgId": "009014102"
     },
-    "time": "2016-12-04 21:00",
+    "time": "2016-12-04T21:00:00Z",
     "genre": "Electro",
-    "Description": "",
+    "description": "",
     "coming": 50
   },
   {
@@ -195,18 +195,18 @@
       "picture": "assets/electro_4.jpg",
       "about": ""
     },
-    "gigname": "Our thing",
+    "gigName": "Our thing",
     "location": {
       "name": "U Schlesisches Tor (Berlin)",
       "lat": "52.501147",
       "lon": "13.441794",
       "type": "U-Bahn Station",
       "description": "Train platform",
-      "bvg-id": "009014102"
+      "bvgId": "009014102"
     },
-    "time": "2016-12-04 22:00",
+    "time": "2016-12-04T22:00:00Z",
     "genre": "Electro",
-    "Description": "",
+    "description": "",
     "coming": 50
   },
   {
@@ -216,18 +216,18 @@
       "picture": "assets/electro_5.jpg",
       "about": ""
     },
-    "gigname": "Our thing",
+    "gigName": "Our thing",
     "location": {
       "name": "U Görlitzer Bahnhof (Berlin)",
       "lat": "52.499035",
       "lon": "13.428463",
       "type": "U-Bahn Station",
       "description": "Train platform",
-      "bvg-id": "009014101"
+      "bvgId": "009014101"
     },
-    "time": "2016-12-04 22:00",
+    "time": "2016-12-04T22:00:00Z",
     "genre": "Electro",
-    "Description": "",
+    "description": "",
     "coming": 50
   }
 ]
