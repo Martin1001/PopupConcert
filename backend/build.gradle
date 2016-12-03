@@ -32,6 +32,8 @@ dependencies {
 
     compileOnly "org.projectlombok:lombok:1.16.10"
 
+    testCompile group: 'org.springframework.boot', name: 'spring-boot-starter-test', version: '1.4.1.RELEASE'
+
 }
 
 task copyJars(type: Copy) {

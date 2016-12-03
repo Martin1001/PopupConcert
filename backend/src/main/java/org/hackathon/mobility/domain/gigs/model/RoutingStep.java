@@ -28,6 +28,15 @@ public class RoutingStep {
 
     }
     public enum RoutingType{
-        WALK, UBAHN, SBAHN, BUS
+        WALK, UBAHN, SBAHN, BUS;
+
+        public static RoutingType of(String typeString) {
+            switch (typeString) {
+                case "WALK":
+                    return WALK;
+                default:
+                    return null;
+            }
+        }
     }
 }

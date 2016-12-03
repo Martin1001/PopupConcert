@@ -21,7 +21,5 @@ public class Gig {
         private String description;
         private Integer coming;
 
-        private List<RoutingStep> routingSteps;
-
 
 }
