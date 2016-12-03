@@ -1,0 +1,13 @@
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-8">
+            <div map-lazy-load="https://maps.google.com/maps/api/js" map-lazy-load-params="{{mapViewCtrl.googleMapsUrl}}" on-center-changed="mapViewCtrl.centerChanged()">
+                <ng-map center="52.500655, 13.435317" zoom="15" default-style="false" trigger-resize="true" on-center-changed="mapViewCtrl.centerChanged()" style="height: 500px">
+                    <marker position="52.500655, 13.435317" on-click="mapViewCtrl.click()" title="Home"></marker>
+                </ng-map>
+            </div>
+        </div>
+        <div class="col-md-4">test</div>
+    </div>
+</div>

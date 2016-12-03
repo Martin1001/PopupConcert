@@ -1,4 +1,4 @@
-export default class MainController {
+export default class MapController {
 
     constructor($log, $scope, $timeout, NgMap) {
         'ngInject';
