@@ -82,6 +82,17 @@ export default class MapController {
                 this.$log.info(band);
                 $scope.band = band;
                 $scope.theBestVideo = band.youtubeId ? band.youtubeId : 'AetfspeIj_M';
+                $scope.route = {};
+
+                // $scope.loadRoute = (band) => {
+                this.$http.get('/api/v1/gigs/route/' + band.id + '?fromLat=52.500868&fromLon=13.436392').then(res => {
+                        console.info('FETCHED SHIT!!');
+                        console.info(res);
+                        $scope.route = res.data;
+                    });
+
+                // $scope.loadRoute(band);
+
             }],
             controllerAs: 'modalCtrl',
             resolve: {
