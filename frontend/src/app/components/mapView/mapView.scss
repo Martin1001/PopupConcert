@@ -1,3 +1,6 @@
+body {
+  background: #222;
+}
 .map-style {
   height: 600px;
 }
@@ -37,4 +40,9 @@
   border-top: 0;
   border-bottom: 0;
   border-left: 0;
+}
+
+.navbar-style {
+  height: 60px;
+  padding-top: 5px;
 }
