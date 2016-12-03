@@ -5,7 +5,7 @@ let webpack = require('webpack');
 
 let HtmlWebpackPlugin = require('html-webpack-plugin');
 let CopyWebpackPlugin = require('copy-webpack-plugin');
-let ExtractTextPlugin = require("extract-text-webpack-plugin")
+let ExtractTextPlugin = require("extract-text-webpack-plugin");
 
 const rootPath = path.join(__dirname, '.');
 const srcPath = path.join(__dirname, '/src');
