@@ -38,7 +38,7 @@ public class GigsController {
 
     private Gig givenGigWithRoute() {
         final Gig res = givenMockedGigs().get(0);
-        res.setRoutingStep(
+        res.setRoutingSteps(
             Arrays.asList(
             RoutingStep.builder()
                 .name("Görlitzer Bhf")

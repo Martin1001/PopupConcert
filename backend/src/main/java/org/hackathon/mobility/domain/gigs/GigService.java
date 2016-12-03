@@ -4,6 +4,7 @@ package org.hackathon.mobility.domain.gigs;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.hackathon.mobility.domain.gigs.model.Gig;
+import org.joda.time.DateTimeComparator;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -36,13 +37,17 @@ public class GigService {
     private void readGigs(){
         try {
             this.gigs = objectMapper.readValue( gigsFile.getInputStream(), new TypeReference<List<Gig>>() {});
-//            Collections.sort(gigs);
+            Collections.sort(gigs, (a,b) -> DateTimeComparator.getInstance().compare(a.getTime(), b.getTime()));
         } catch (IOException e) {
             log.error("IO Exception occured while parsing fixtures file from classpath location {}", gigsFile.getPath(), e);
             throw new IllegalStateException(e);
         }
     }
 
+    /**
+     * All Gigs available - sorted
+     * @return
+     */
     public List<Gig> allGigs(){
         return gigs;
     }
