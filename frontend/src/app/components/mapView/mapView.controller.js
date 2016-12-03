@@ -1,6 +1,6 @@
 export default class MapController {
 
-    constructor($log, $http, $timeout, NgMap, $uibModal, mapViewModal) {
+    constructor($log, $http, $timeout, NgMap, $uibModal) {
         'ngInject';
         this.googleMapsUrl = "https://maps.googleapis.com/maps/api/js?key=AIzaSyBQpWnOkp6VOAUs_1AZlTZSCMe1R8GDhg0";
         this.$log = $log;
