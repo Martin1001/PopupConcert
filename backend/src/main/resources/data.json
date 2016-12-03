@@ -20,6 +20,7 @@
     "description": "",
     "coming": 150
   },
+
   {
     "id": "1001",
     "performer": {
@@ -381,11 +382,11 @@
   {
     "id": "1018",
     "performer": {
-      "name": "Calista Jordana",
-      "picture": "classic_4.jpg",
-      "about": ""
+      "name": "Krautrock-Guerilla",
+      "picture": "03_03_Krautrock-GI_rec.jpg",
+      "about": "Cameras energetischer Stil scheint sich stets in sich selbst zu erneuern und erinnert stark an den Krautrock, was eine große Ehre für eine neue junge Musikergeneration ist, zu welcher auch Camera gehört. Und weil die Berliner Band anfänglich am liebsten ohne Erlaubnis in U-Bahnhöfen oder sonstigen öffentlichen Plätzen (etwa auf dem Herrenklo bei der Echo-Verleihung) ihre Konzerte spielte, hat man sie öffentlichkeitswirksam „Krautrock-Guerilla“ getauft."
     },
-    "gigName": "Calista Jordana sings opera",
+    "gigName": "WeAreCamera rocks live",
     "location": {
       "name": "S+U Warschauer Str. (Berlin)",
       "lat": "52.505884",
@@ -396,6 +397,7 @@
     },
     "time": "2016-12-04T16:00:00Z",
     "genre": "Classic",
+    "youtubeId": "JMja3Ozr1Pc",
     "description": "",
     "coming": 50
   },

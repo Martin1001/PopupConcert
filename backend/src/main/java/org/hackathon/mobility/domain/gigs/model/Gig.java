@@ -20,6 +20,6 @@ public class Gig {
         private String genre;
         private String description;
         private Integer coming;
-
+        private String youtubeId;
 
 }

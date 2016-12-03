@@ -66,7 +66,7 @@ export default class MapController {
             controller: ["$scope", "$uibModalInstance", "band", ($scope, $uibModalInstance, band) => {
                 this.$log.info(band);
                 $scope.band = band;
-                $scope.theBestVideo = 'AetfspeIj_M';
+                $scope.theBestVideo = band.youtubeId ? band.youtubeId : 'AetfspeIj_M';
             }],
             controllerAs: 'modalCtrl',
             resolve: {
