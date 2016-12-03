@@ -1,4 +1,4 @@
-package org.hackathon.mobility.domain.gigs;
+package org.hackathon.mobility.domain.gigs.model;
 
 import lombok.Builder;
 import lombok.Data;

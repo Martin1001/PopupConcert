@@ -1,10 +1,11 @@
 package org.hackathon.mobility.rest;
 
-import org.hackathon.mobility.domain.gigs.Gig;
-import org.hackathon.mobility.domain.gigs.Location;
-import org.hackathon.mobility.domain.gigs.Performer;
+import org.hackathon.mobility.domain.gigs.model.Gig;
+import org.hackathon.mobility.domain.gigs.model.Location;
+import org.hackathon.mobility.domain.gigs.model.Performer;
 import org.joda.time.DateTime;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.Arrays;
@@ -18,6 +19,11 @@ public class GigsController {
 
         final List<Gig> res = givenMockedGigs();
         return res;
+    }
+
+    @GetMapping(path = "/gigs/{gigId}")
+    public Gig gig(@PathVariable String gigId) {
+        return givenMockedGigs().get(0);
     }
 
 
