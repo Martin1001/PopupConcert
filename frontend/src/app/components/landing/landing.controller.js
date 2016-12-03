@@ -5,7 +5,7 @@ export default class LandingController {
         this.$log = $log;
         this.$timeout = $timeout;
 
-        this.msg = "for martin";
+        //this.msg = "for martin";
     }
 }
 

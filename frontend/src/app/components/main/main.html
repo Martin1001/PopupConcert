@@ -1,0 +1,5 @@
+<div map-lazy-load="https://maps.google.com/maps/api/js" map-lazy-load-params="{{mainCtrl.googleMapsUrl}}" on-center-changed="vm.centerChanged()">
+    <ng-map center="52.500655, 13.435317" zoom="15" default-style="true" on-center-changed="mainCtrl.centerChanged()">
+        <marker position="52.500655, 13.435317" on-click="mainCtrl.click()" title="Home"></marker>
+    </ng-map>
+</div>
