@@ -57,6 +57,21 @@ export default class MapController {
         return new Date(millis);
     };
 
+    classForGenre(genre){
+        switch(genre){
+            case 'Rock':
+                return 'label-danger';
+            case 'Classic':
+                return 'label-default';
+            case 'World':
+                return 'label-success';
+            case 'Electro':
+                return 'label-primary';
+            default:
+                return '';
+        }
+    }
+
     open(band) {
         console.log('OPEN');
         this.modalInstance = this.$uibModal.open({

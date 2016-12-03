@@ -14,11 +14,7 @@
 
         </div>
         <div class="navbar-right" style="padding-right: 10px; padding-top: 15px; ">
-            <a href="#"><span class="label label-danger">Rock</span></a>
-            <a href="#"><span class="label label-primary">Electro</span></a>
-            <a href="#"><span class="label label-success">World</span></a>
-            <a href="#"><span class="label label-default">Classic</span></a>
-            {{mapViewCtrl.currentGenres}}
+            <a ng-repeat="a in mapViewCtrl.currentGenres" href="#"><span class="label" ng-class="mapViewCtrl.classForGenre(a)">{{a}}</span></a>
         </div>
     </div>
 </nav>
