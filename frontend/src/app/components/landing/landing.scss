@@ -29,11 +29,22 @@ article {
 
 h1 {
   position: absolute;
-  top: 60%;
+  top: 65%;
   width: 100%;
-  font-size: 36px;
+  font-size: 50px;
   letter-spacing: 3px;
-  color: #fff;
+  color: #fff236;
+  font-family: Oswald, sans-serif;
+  text-align: center;
+}
+
+.logo {
+  position: absolute;
+  top: 15%;
+  width: 100%;
+  font-size: 50px;
+  letter-spacing: 3px;
+  color: #fff236;
   font-family: Oswald, sans-serif;
   text-align: center;
 }
