@@ -3,7 +3,7 @@
     "id": "1000",
     "performer": {
       "name": "The Bootstrappers",
-      "picture": "assets/rock_1.jpg",
+      "picture": "images/bands/rock_1.jpg",
       "about": ""
     },
     "gigName": "Opening minds",
@@ -24,7 +24,7 @@
     "id": "1001",
     "performer": {
       "name": "Trendy Healer",
-      "picture": "assets/rock_2.jpg",
+      "picture": "images/bands/rock_2.jpg",
       "about": ""
     },
     "gigName": "Our first album",
@@ -45,7 +45,7 @@
     "id": "1002",
     "performer": {
       "name": "Goggles Of Sanity",
-      "picture": "assets/rock_3.jpg",
+      "picture": "images/bands/rock_3.jpg",
       "about": ""
     },
     "gigName": "Finally out",
@@ -66,7 +66,7 @@
     "id": "1003",
     "performer": {
       "name": "Goggles Of Sanity",
-      "picture": "assets/rock_4.jpg",
+      "picture": "images/bands/rock_4.jpg",
       "about": ""
     },
     "gigName": "Finally out",
@@ -87,7 +87,7 @@
     "id": "1004",
     "performer": {
       "name": "Indignant Tofu",
-      "picture": "assets/rock_5.jpg",
+      "picture": "images/bands/rock_5.jpg",
       "about": ""
     },
     "gigName": "Bored with life",
@@ -108,7 +108,7 @@
     "id": "1005",
     "performer": {
       "name": "DJ Titan",
-      "picture": "assets/electro_1.jpg",
+      "picture": "images/bands/electro_1.jpg",
       "about": ""
     },
     "gigName": "Music for the masses",
@@ -129,7 +129,7 @@
     "id": "1006",
     "performer": {
       "name": "DJ Alice",
-      "picture": "assets/electro_2.jpg",
+      "picture": "images/bands/electro_2.jpg",
       "about": ""
     },
     "gigName": "Making noise",
@@ -150,7 +150,7 @@
     "id": "1007",
     "performer": {
       "name": "Artificial Execution",
-      "picture": "assets/electro_3.jpg",
+      "picture": "images/bands/electro_3.jpg",
       "about": ""
     },
     "gigName": "Our thing",
@@ -171,7 +171,7 @@
     "id": "1008",
     "performer": {
       "name": "Artificial Execution",
-      "picture": "assets/electro_3.jpg",
+      "picture": "images/bands/electro_3.jpg",
       "about": ""
     },
     "gigName": "Our thing",
@@ -192,7 +192,7 @@
     "id": "1009",
     "performer": {
       "name": "Temple of Vegan",
-      "picture": "assets/electro_4.jpg",
+      "picture": "images/bands/electro_4.jpg",
       "about": ""
     },
     "gigName": "Our thing",
@@ -213,7 +213,7 @@
     "id": "1010",
     "performer": {
       "name": "Happy Brain",
-      "picture": "assets/electro_5.jpg",
+      "picture": "images/bands/electro_5.jpg",
       "about": ""
     },
     "gigName": "Our thing",
