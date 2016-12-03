@@ -22,12 +22,12 @@
         </div>
         <div class="col col-md-4">
             <div class="list-group scrollable">
-                <a href="#" class="list-group-item" ng-repeat="band in mapViewCtrl.bandlist" style="display: flex">
+                <a href="#" class="list-group-item" ng-repeat="band in mapViewCtrl.bandlist" style="display: flex; padding: 0" >
 
-                    <div style="width: 20%">
-                        <img src="{{band.performer.picture}}" height="80px" width="80px" class="img-rounded">
+                    <div style="width: 30%">
+                        <img src="{{band.performer.picture}}" height="120px" width="120px">
                     </div>
-                    <div style="width: 80%; padding-left: 10px;">
+                    <div style="width: 70%; padding-left: 10px; padding-top: 5px">
                         <p class="list-group-item-text">
                             <span>{{band.location.name}}</span>
                         </p>

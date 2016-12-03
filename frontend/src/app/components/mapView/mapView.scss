@@ -1,9 +1,9 @@
 .map-style {
-  height: 800px;
+  height: 600px;
 }
 
 .scrollable {
-  max-height: 800px;
+  max-height: 600px;
   overflow: scroll;
 }
 
@@ -23,6 +23,12 @@
 
 .col {
   padding-left:0;
-
   padding-right:0;
+}
+
+.list-group-item {
+  border-radius: 0;
+  margin-bottom: 0;
+  border-top: 0;
+  border-bottom: 0;
 }
