@@ -1,8 +1,6 @@
 package org.hackathon.mobility.domain.navigation;
 
-import java.text.NumberFormat;
 import java.util.ArrayList;
-import java.util.Locale;
 
 import org.hackathon.mobility.domain.gigs.model.RoutingStep;
 import org.springframework.http.HttpMethod;
@@ -30,8 +28,8 @@ public class BvgApiClient {
                 String prize = null;
                 try{
                     final JsonNode ticket = json.get("Trip").get(0).get("TariffResult").get("fareSetItem").get(0).get("fareItem").get(0).get("ticket").get(0);
-                    int prz = ticket.get("price").asInt(0);
-                    prize = NumberFormat.getCurrencyInstance(Locale.GERMAN).format(prz / 100d);
+                    float prz = ticket.get("price").asInt(0) / 100f;
+                    prize = String.format("%.2f", (double) prz) + " €";
 
                 } catch (Exception e) {}
 
