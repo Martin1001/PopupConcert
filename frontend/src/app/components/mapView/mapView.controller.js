@@ -2,13 +2,14 @@ import modalTemplate from './mapView.modal.html';
 
 export default class MapController {
 
-    constructor($log, $http, $timeout, NgMap, $uibModal) {
+    constructor($state, $log, $http, $timeout, NgMap, $uibModal) {
         'ngInject';
         this.googleMapsUrl = "https://maps.googleapis.com/maps/api/js?key=AIzaSyBQpWnOkp6VOAUs_1AZlTZSCMe1R8GDhg0";
         this.$log = $log;
         this.$http = $http;
         this.$timeout = $timeout;
         this.$uibModal = $uibModal;
+        this.$state = $state;
 
         this.playlist = [];
         this.bandlist = [];
@@ -56,6 +57,11 @@ export default class MapController {
     getTime = (millis) => {
         return new Date(millis);
     };
+
+    goBackToMap() {
+        this.$log.info('go back');
+        this.$state.go("mapView", {}, { reload: 'mapView' });
+    }
 
     classForGenre(genre){
         switch(genre){
