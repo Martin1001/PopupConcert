@@ -91,7 +91,22 @@ export default class MapController {
                         $scope.route = res.data;
                     });
 
-                // $scope.loadRoute(band);
+                $scope.getTransportTypeImage = (line) => {
+                    this.$log.debug(line);
+
+                    if (line) {
+
+                        if (line.name.startsWith('U')) {
+                            return "images/icon-ubahn.png";
+                        } else if (line.name.startsWith('B')){
+                            return "images/icon-bus.png";
+                        }
+
+                        return "images/logo.png";
+                    } else {
+                        return "images/pedestrian-walking.png"
+                    }
+                };
 
             }],
             controllerAs: 'modalCtrl',

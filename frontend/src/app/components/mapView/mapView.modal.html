@@ -6,12 +6,13 @@
 </div>
 <div class="modal-body">
     <div class="row">
-    <div class="col-md-5">
-        <youtube-video video-id="theBestVideo" player-width="'100%'"></youtube-video>
-    </div>
-        <div class="col-md-7">
+        <div class="col-md-4">
+            <youtube-video video-id="theBestVideo" player-width="'100%'" player-height="'200px'"></youtube-video>
+            <img src="images/youtube-live.png" height="40px" style="margin-top: -70px"/>
+        </div>
+        <div class="col-md-8">
             <div>
-                <span class="label"
+                <span class="label genre-label"
                       ng-class="{'Rock':'label-danger', 'Electro':'label-primary', 'World':'label-success', 'Classic': 'label-default'}[band.genre]"
                 >{{band.genre}}</span>
             </div>
@@ -19,18 +20,49 @@
                 {{band.performer.about}}
             </div>
             <div class="route">
-                <div class="routingStep" ng-repeat="step in route.routingSteps">
-                    {{step}}
-                </div>
+                <h4>How you can get there...</h4>
+                <ul class="list-group" ng-if="route.routingSteps">
+                    <li class="list-group-item">
+                        <span>
+                            <img src="images/location-pointer.png" height="25px" width="25px"/>
+                        </span>
+                        <span><strong>Skalitzer Straße 85/86</strong></span>
+                    </li>
+                    <div ng-repeat-start="step in route.routingSteps">
+                        <li class="list-group-item">
+                        <span>
+                            <img src="{{getTransportTypeImage(step.line)}}" height="25px" width="25px"/>
+                        </span>
+                            <span ng-if="step.line">{{step.line.name}} &rightarrow; {{step.line.direction}}</span>
+                            <span ng-if="!step.line">Walking &rightarrow; {{step.name}}</span>
+                        </li>
+                        <li class="list-group-item" ng-if="step.name !== band.location.name">
+                            <span>
+                                <img src="images/stop.png" height="25px" width="25px"/>
+                            </span>
+                            <span><strong>{{step.name}}</strong></span>
+                        </li>
+                    </div>
+                    <div ng-repeat-end=""/>
+                    <li class="list-group-item">
+                        <span>
+                            <img src="images/logo.png" height="25px" width="25px"/>
+                        </span>
+                        <span><strong>{{band.location.name}}</strong></span>
+                    </li>
+
+                </ul>
             </div>
         </div>
     </div>
 </div>
 <div class="modal-footer">
-    <button type="button" class="btn btn-default pull-left">
+    <button type="button" class="btn btn-success pull-left">
         <span class="glyphicon glyphicon-shopping-cart"></span>
+        <span>Join the Gig with BVG for {{route.totalPrice}} (10% for the artist)</span>
     </button>
-    <div class="ssk-group ssk-rounded">
+    <button type="button" class="btn btn-warning pull-left">Donation</button>
+    <div class="ssk-group ssk-round">
         <a href="" class="ssk ssk-facebook"></a>
         <a href="" class="ssk ssk-twitter"></a>
         <a href="" class="ssk ssk-google-plus"></a>
