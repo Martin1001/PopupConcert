@@ -97,6 +97,10 @@ export default class MapController {
                         $scope.route = res.data;
                     });
 
+                $scope.getTime = (millis) => {
+                    return new Date(millis);
+                };
+
                 $scope.getTransportTypeImage = (line) => {
                     this.$log.debug(line);
 

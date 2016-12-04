@@ -1,11 +1,10 @@
 package org.hackathon.mobility.domain.gigs.model;
 
+import org.joda.time.DateTime;
+
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
-import org.joda.time.DateTime;
-
-import java.util.List;
 
 @Data
 @AllArgsConstructor
@@ -21,5 +20,18 @@ public class Gig {
         private String description;
         private Integer coming;
         private String youtubeId;
+
+        public String getBeautifiedTime(){
+                if (this.time == null) {
+                        return "";
+                }
+                if(this.time.isBefore(DateTime.now().millisOfDay().withMaximumValue())){
+                        return "Today";
+                }
+                if(this.time.isBefore(DateTime.now().plusDays(1).millisOfDay().withMaximumValue())){
+                        return "Tomorrow";
+                }
+                return "";
+        }
 
 }
